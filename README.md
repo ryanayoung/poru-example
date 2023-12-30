@@ -2,6 +2,12 @@
 
 A Music Bot Template based on [Poru](https://npmjs.com/poru) lavalink client ❤️
 
+Fork Info: the Play slash command was broken and only ever searched for
+'undefined'. Fixed that. Also the original package.json gave me a lot of
+trouble, so I reinitialized it using npm v20. Now everything seems to work.  
+-Ryan y.
+
+
 ## Features
 
 - Poru wrapper based music client
