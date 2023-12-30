@@ -23,9 +23,14 @@ module.exports = {
       deaf: true,
     });
 
-    const resolve = await client.poru.resolve(
-      interaction.options.getString('query', true),
-    );
+
+    player.setVolume(20);
+
+    const resolve = await client.poru.resolve({
+       query: interaction.options.getString('query'), source: 'ytsearch', requester: interaction.member
+     });
+
+
 
     const { loadType, tracks, playlistInfo } = resolve;
     if (loadType === 'PLAYLIST_LOADED') {
